@@ -39,7 +39,7 @@ export function loadHome() {
 
   secondDiv.classList.add('secondDiv');
 
-   mapImg.src = "./assets/Map.img.png";
+   mapImg.src = "https://img.freepik.com/free-vector/informational-city-map-with-streets-name_23-2148309621.jpg?semt=ais_hybrid&w=740&q=80";
 
    const locationHeading = document.createElement('h1');
   locationHeading.innerText = '📍Locate Us here!';
