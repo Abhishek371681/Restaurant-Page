@@ -1,0 +1,1 @@
+This assets contains the images, fonts and other styling content, should use for it only.

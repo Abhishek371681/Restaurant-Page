@@ -1,0 +1,143 @@
+@font-face {
+    font-family:'GrinchFont';
+    src: url('./assets/fonts/now.regular.otf');
+}
+
+h1.homeheading, h1.location-heading{
+    color:white;
+     font-family:'GrinchFont';
+    
+}
+
+div#content{
+    min-height:100vh;
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    align-items:center;
+    padding-top:70px;
+    background-image: url('https://images.pexels.com/photos/34994568/pexels-photo-34994568.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+div.home-top{
+  height:min(85%, 1200px);
+ background-color:rgba(255, 248, 240, 0.2);
+    backdrop-filter:blur(2px);
+  width:85%;
+  margin:40px, 20px;
+  border-radius:14px;
+  padding:32px;
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  gap:40px;
+}
+
+div.topTextDiv{
+    flex:1;
+    width:100%;
+    display:flex;
+   gap:16px;
+}
+
+img.image-1{
+      width: min(100%, 420px);
+    height: auto;
+    border-radius: 14px;
+    display: block;
+
+}
+
+p.para1{
+    font-family:"GrinchFont";
+    color:white;
+    line-height: 1.6;
+}
+
+div.textDiv{
+     width:40%;
+    display:grid;
+    grid-template-rows: 0.5fr 1fr;
+}
+
+img.mapimg{
+     width: min(100%, 420px);
+    height: auto;
+    border-radius: 14px;
+    display: block;
+}
+
+div.second-card{
+    width: min(85%, 1200px);
+    background-color:rgba(255, 248, 240, 0.2);
+    backdrop-filter:blur(2px);
+    width:85%;
+    margin:40px 20px;
+    border-radius:14px;
+    padding:32px;
+    flex-direction:row;
+    gap:420px;
+    align-items:center;
+    justify-content:center;
+      display: flex;
+}
+
+footer.footer{
+  color: black;
+  background: rgba(255, 248, 240, 0.5);
+  padding: 20px;
+  width: 100%;
+  display:flex;
+  justify-content:center;
+  flex-direction:column;
+  align-items:center;
+}
+
+
+@media (max-width: 900px) {
+    div.home-top,
+    div.second-card {
+        flex-direction: column;
+        width: calc(100% - 40px);
+        padding: 24px;
+        gap: 24px;
+    }
+
+    div.topTextDiv {
+        width: 100%;
+    }
+
+    img.image-1,
+    img.mapimg {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    div#content {
+        padding-top: 70px;
+    }
+
+    div.home-top,
+    div.second-card {
+        margin: 20px 12px;
+        padding: 18px;
+        border-radius: 10px;
+        gap: 18px;
+    }
+
+    h1.homeheading,
+    h1.location-heading {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    p.para1 {
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+}
